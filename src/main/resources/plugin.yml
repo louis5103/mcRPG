@@ -1,0 +1,4 @@
+name: mcRPG
+version: '1.0-SNAPSHOT'
+main: io.github.louis5103.mcRPG.McRPG
+api-version: '1.20'
