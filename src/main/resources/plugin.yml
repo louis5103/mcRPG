@@ -2,3 +2,8 @@ name: mcRPG
 version: '1.0-SNAPSHOT'
 main: io.github.louis5103.mcRPG.McRPG
 api-version: '1.20'
+commands:
+  hello:
+    description: "Hello Command"
+  blockcrash:
+      description: "Block Crash Mini Game"
