@@ -1,5 +1,6 @@
-package io.github.louis5103.mcRPG;
+package io.github.louis5103.mcRPG.quest;
 
+import io.github.louis5103.mcRPG.McRPG;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

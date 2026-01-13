@@ -1,5 +1,8 @@
 package io.github.louis5103.mcRPG;
 
+import io.github.louis5103.mcRPG.base.Events;
+import io.github.louis5103.mcRPG.base.HelloCommand;
+import io.github.louis5103.mcRPG.quest.BlockDestroyedCommand;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -7,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class McRPG extends JavaPlugin {
-    static McRPG instance;
+    public static McRPG instance;
     public long startTime = 0L;
     public List<Material> blockList = new ArrayList<>();
     public boolean onGame = false;

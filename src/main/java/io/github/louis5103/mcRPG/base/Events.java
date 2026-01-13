@@ -1,5 +1,6 @@
-package io.github.louis5103.mcRPG;
+package io.github.louis5103.mcRPG.base;
 
+import io.github.louis5103.mcRPG.McRPG;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.block.Block;

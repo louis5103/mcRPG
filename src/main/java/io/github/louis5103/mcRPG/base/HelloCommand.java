@@ -1,4 +1,4 @@
-package io.github.louis5103.mcRPG;
+package io.github.louis5103.mcRPG.base;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
