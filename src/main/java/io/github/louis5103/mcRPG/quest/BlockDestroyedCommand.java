@@ -14,16 +14,8 @@ public class BlockDestroyedCommand implements CommandExecutor {
         if(!(sender instanceof Player)) return false;
 
         Player player = (Player) sender;
-        McRPG.instance.startTime = player.getWorld().getTime();
-
-        McRPG.instance.blockList.add(Material.GRASS_BLOCK);
-        McRPG.instance.blockList.add(Material.GRAY_WOOL);
-        McRPG.instance.blockList.add(Material.STONE);
-        McRPG.instance.blockList.add(Material.OAK_PLANKS);
-
-        player.sendMessage("다음 블록을 순서대로 부숴주세요.");
-        player.sendMessage(McRPG.instance.blockList.toString());
-        McRPG.instance.onGame = true;
+        QuestManager.getInstance().validAndCreateQuestUser(player.getUniqueId());
+        player.sendMessage("퀘스트 시작!");
         return false;
     }
 }

@@ -22,22 +22,4 @@ public class Events implements Listener {
         ));
     }
 
-    @EventHandler
-    public void OnPlayerDestroyBlock(BlockBreakEvent event) {
-        Player player = event.getPlayer();
-        Block block = event.getBlock();
-        player.sendMessage(block.getType().toString() + "을 부셨습니다.");
-
-        if(block.getType() == McRPG.instance.blockList.get(0)) {
-            McRPG.instance.blockList.removeFirst();
-            player.sendMessage(McRPG.instance.blockList.toString());
-            if(McRPG.instance.blockList.size() == 0) {
-                player.sendMessage("Game Clear!");
-                player.sendMessage("걸린 시간: " + (player.getWorld().getTime() - McRPG.instance.startTime));
-                McRPG.instance.onGame = false;
-            }
-        } else {
-            player.sendMessage("이 블록이 아닙니다.");
-        }
-    }
 }
